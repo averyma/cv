@@ -1,0 +1,102 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{changepage}
+\usepackage{libertine}
+\usepackage{microtype}
+\usepackage[explicit]{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{relsize}
+\usepackage{hyperref}
+
+\titleformat{\section}
+    {\normalfont\Large\bfseries}
+    {\thesection}
+    {1em}
+    {#1}
+    [{\titlerule[0.8pt]}]
+
+\definecolor{myColor}
+            {rgb}
+            {0.19,0.55,0.95}
+            
+\hypersetup{colorlinks=true,urlcolor=myColor}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist{nolistsep}
+
+% \newcommand{\indentleft}{0.75cm}
+\newcommand{\indentleft}{-0.5cm}
+\newcommand{\indentright}{0cm}
+\newcommand{\interlist}{0.5em}
+\newcommand{\postsubhead}{-0.5em}
+\newcommand{\postsection}{-0.5em}
+
+\begin{document}
+\raggedright
+
+  {\bfseries\Huge{Avery Bojie Ma}}
+  \vspace{10pt}
+
+  {\small
+    2008K, East Campus 4 \\
+    200 University Ave W.\\
+    Waterloo, ON, N2L 3G1\\
+    \vspace{-1pt}
+    \href{http://averyma.com}{averyma.com}\\
+    \vspace{-2pt}
+    \href{mailto:avery.ma@uwaterloo.ca}{avery.ma@uwaterloo.ca}
+    \vspace{-3pt}
+  }
+  %\hrule
+  
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\input{education}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+\input{publications}
+%----------------------------------------------------------------------------------------
+%	Patents
+%----------------------------------------------------------------------------------------
+\input{patents}
+%----------------------------------------------------------------------------------------
+%	Research Experience
+%----------------------------------------------------------------------------------------
+\input{research_exp}
+%----------------------------------------------------------------------------------------
+%	Work Experience
+%----------------------------------------------------------------------------------------
+\input{work_exp}
+% \pagebreak
+%----------------------------------------------------------------------------------------
+%	Scholarship and Awards
+%----------------------------------------------------------------------------------------
+\input{awards}
+%----------------------------------------------------------------------------------------
+%	TEACHING SECTION
+%----------------------------------------------------------------------------------------
+\input{teaching_exp}
+% \pagebreak
+%----------------------------------------------------------------------------------------
+%	Conference Presentations
+%----------------------------------------------------------------------------------------
+\input{presentations}
+%----------------------------------------------------------------------------------------
+%	Invited Talks
+%----------------------------------------------------------------------------------------
+\input{talks}
+% %----------------------------------------------------------------------------------------
+% %	Leadership and Volunteer Experience
+% %----------------------------------------------------------------------------------------
+% \input{leadership_volunteer}
+
+
+
+\end{document}
