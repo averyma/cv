@@ -10,6 +10,7 @@
 \usepackage{xcolor}
 \usepackage{relsize}
 \usepackage{hyperref}
+\usepackage{multicol}
 
 \titleformat{\section}
     {\normalfont\Large\bfseries}
@@ -36,32 +37,49 @@
 \newcommand{\postsection}{-0.5em}
 
 \begin{document}
-\raggedright
+% \raggedright
+%   {\bfseries\Huge{Avery Ma}}
+%   \vspace{10pt}
 
-  {\bfseries\Huge{Avery Ma}}
-  \vspace{10pt}
+%   {\small
+%     Vector Institute\\
+%     % Schwartz Reisman Innovation Campus\\
+%     W1140-108 College St\\
+%     Toronto, ON M5G 0C6\\
+%     \vspace{-1pt}
+%     \href{http://averyma.com}{averyma.com}\\
+%     \vspace{-2pt}
+%     \href{mailto:ama@cs.toronto.edu}{ama@cs.toronto.edu}
+%     \vspace{-3pt}\\
+%     Last update: Feb 2025
+%   }
 
-  {\small
-    Vector Institute\\
-    Schwartz Reisman Innovation Campus\\
-    108 College St, Suite W1140\\
-    Toronto, ON M5G 0C6\\
-    % \vspace{0pt}
-    % Cell: 647-770-1767\\
-    \vspace{-1pt}
-    \href{http://averyma.com}{averyma.com}\\
-    \vspace{-2pt}
-    \href{mailto:ama@cs.toronto.edu}{ama@cs.toronto.edu}
-    \vspace{-3pt}\\
-    Last update: Feb 2025
-  }
-  %\hrule
-  
+%----------------------------------------------------------------------------------------
+%   HEADER WITH NAME (LEFT) AND CONTACT (RIGHT)
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{0.55\textwidth}
+    \vspace{10pt}
+    % {\bfseries\Huge Avery Ma}
+    {\bfseries\fontsize{30}{44}\selectfont Avery Ma}
+\end{minipage}
+\begin{minipage}[t]{0.45\textwidth}
+    \raggedleft
+    \small
+    % Vector Institute\\
+    W1140-108 College St\\
+    Toronto, ON M5G 0C6 \\
+    \href{http://averyma.com}{averyma.com} \\
+    \href{mailto:ama@cs.toronto.edu}{ama@cs.toronto.edu} \\
+    Last update: May 2025
+\end{minipage}
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 \input{education}
-
+%----------------------------------------------------------------------------------------
+%	Research Experience
+%----------------------------------------------------------------------------------------
+\input{research_exp}
 %----------------------------------------------------------------------------------------
 %	PUBLICATION SECTION
 %----------------------------------------------------------------------------------------
@@ -71,14 +89,9 @@
 %----------------------------------------------------------------------------------------
 \input{patents}
 %----------------------------------------------------------------------------------------
-%	Research Experience
-%----------------------------------------------------------------------------------------
-\input{research_exp}
-%----------------------------------------------------------------------------------------
 %	Work Experience
 %----------------------------------------------------------------------------------------
-\input{work_exp}
-% \pagebreak
+% \input{work_exp}
 %----------------------------------------------------------------------------------------
 %	Scholarship and Awards
 %----------------------------------------------------------------------------------------
@@ -86,12 +99,12 @@
 %----------------------------------------------------------------------------------------
 %	TEACHING SECTION
 %----------------------------------------------------------------------------------------
-\input{teaching_exp}
+% \input{teaching_exp}
 % \pagebreak
 %----------------------------------------------------------------------------------------
 %	Conference Presentations
 %----------------------------------------------------------------------------------------
-\input{presentations}
+% \input{presentations}
 %----------------------------------------------------------------------------------------
 %	Invited Talks
 %----------------------------------------------------------------------------------------
@@ -99,7 +112,7 @@
 % %----------------------------------------------------------------------------------------
 % %	Student mentoring
 % %----------------------------------------------------------------------------------------
-\input{mentor}
+% \input{mentor}
 % %----------------------------------------------------------------------------------------
 % %	Community service
 % %----------------------------------------------------------------------------------------
